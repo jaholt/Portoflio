@@ -12,24 +12,78 @@ nav {
     text-transform: capitalize;
     letter-spacing: 0;
     font-size: 16px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
     display: inline-block;
     list-style-type: none;
-    margin-right: 42%;
-    margin-bottom: 0;
-    margin-top: 0;
-    float: right;
+    padding-left: 0;
+
 }
 
 nav li {
     display: inline-block;
     float: right;
-    padding: 10px;
+    padding-right: 10px;
+    padding-left: 0px;
 }
 
 .logoName {
+    float: left;
     padding: 10px;
     display: inline-block;
+}
+
+.navAlignBox {
+    height: 10px;
+    width: 10px;
+    background-color: #FFFFFF;
+}
+
+.titleContainer {
+    background-color: #dad8df;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.titleBox {
+    background-color: #bebcc3;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+.subcategoryContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.aboutMeBox {
+    background-color: #dad8df;
+    width: 500px;
+    display: inline-block;
+}
+
+.portfolioContactContainer {
+    background-color: #dad8df;
+    width: 500px;
+    display: inline-block;
+}
+
+.portfolioBox {
+    background-color: #bebcc3;
+}
+
+.contactBox {
+    background-color: #bebcc3;
 }
