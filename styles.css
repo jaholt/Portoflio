@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 50px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-size: 16px;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 42%;
+    margin-bottom: 0;
+    margin-top: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+}
+
+.logoName {
+    padding: 10px;
+    display: inline-block;
+}
