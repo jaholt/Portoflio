@@ -28,8 +28,18 @@ body {
 }
 
 @font-face {
-    font-family: "vogue";
-    src: url("css/fonts/vogue.ttf");
+    font-family: "roboto bold";
+    src: url("css/fonts/roboto-bold.ttf");
+}
+
+@font-face {
+    font-family: "caviar bold";
+    src: url("css/fonts/caviardreams_bold.ttf");
+}
+
+@font-face {
+    font-family: "roboto light";
+    src: url("css/fonts/roboto-light.ttf");
 }
 
 nav {
@@ -37,8 +47,6 @@ nav {
     text-transform: capitalize;
     letter-spacing: 0;
     font-size: 16px;
-    /*display: flex;*/
-    /*justify-content: center;*/
 }
 
 .navContainer {
@@ -51,10 +59,10 @@ nav ul {
     display: inline-block;
     list-style-type: none;
     padding-left: 0;
-
 }
 
 nav li {
+    color: #000000;
     display: inline-block;
     float: right;
     padding: 7px;
@@ -76,17 +84,24 @@ nav li:hover {
 }
 
 .navAlignBox {
-    height: 10px;
-    width: 10px;
+    /*border: #FFFFFF 2px solid;*/
+    height: 50px;
+    width: 50px;
     background-color: #FFFFFF;
 }
+
+/*@media screen and (max-width: 720px) {*/
+    /*nav ul {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
 
 .titleContainer {
     height: 600px;
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    background-image: url("css/pics/background-boardwalk-clouds-808465.jpg");
+    background-image: url("css/pics/mountainwalk.jpg");
     background-size: cover;
 }
 
@@ -145,37 +160,40 @@ nav li:hover {
 
 .aboutMeBox {
     border-radius: 8px;
-    /*background-color: #dad8df;*/
     width: 600px;
+    height: 300px;
     display: inline-block;
     text-indent: 15px;
-    color: rgba(97,97,97,0);
-    padding: 10px;
+    color: #FFFFFF;
+    /*padding: 10px;*/
     margin: 8px;
     font-family: "roboto thin";
-    background-image: url("css/pics/abstract-antique-architectural-design-340981.jpg");
+    background-image: url("css/pics/vaticanStairs.jpg");
     background-size: cover;
+    position: relative;
 }
 
-.aboutMeBox h3.titleMaintainControl {
+.aboutMeBox a{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    opacity: 0;
     color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 60px;
+    border-radius: 8px;
 }
 
-.portfolioBox h3.titleMaintainControl {
-    color: #FFFFFF;
-}
-
-.contactBox h3.titleMaintainControl {
-    color: #FFFFFF;
-}
-
-.aboutMeBox:hover {
-    color: #FFFFFF;
-    /*background-color: rgba(186,184,191,0.46);*/
+.aboutMeBox:hover a {
+    transition-duration: 0.3s;
+    opacity: 1;
+    background-color: rgba(67,66,72,0.46);
 }
 
 .portfolioContactContainer {
-    /*background-color: #dad8df;*/
     color: #FFFFFF;
     width: 600px;
     display: inline-block;
@@ -184,32 +202,104 @@ nav li:hover {
 
 .portfolioBox {
     border-radius: 8px;
-    /*background-color: #bebcc3;*/
+    width: 600px;
+    height: 150px;
     text-indent: 15px;
-    color: rgba(97,97,97,0);
-    padding: 3px;
+    color: #FFFFFF;
+    /*padding: 3px;*/
     margin-bottom: 10px;
     font-family: "roboto thin";
-    background-image: url("css/pics/black-watch-blogger-blue-cloth-179912.jpg");
+    background-image: url("css/pics/riceWork.jpg");
     background-size: cover;
+    position: relative;
+    text-decoration: none;
 }
 
-.portfolioBox:hover {
+.portfolioContactContainer h3 {
+    padding-top: 18px;
+}
+
+.portfolioBox a{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    opacity: 0;
     color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 40px;
+    border-radius: 8px;
+}
+
+.portfolioBox:hover a {
+    transition-duration: 0.3s;
+    opacity: 1;
+    background-color: rgba(67,66,72,0.46);
 }
 
 .contactBox {
     border-radius: 8px;
-    /*background-color: #bebcc3;*/
+    width: 600px;
+    height: 150px;
     text-indent: 15px;
-    padding: 3px;
-    color: rgba(97,97,97,0);
+    /*padding: 3px;*/
+    color: #FFFFFF;
     font-family: "roboto thin";
-    background-image: url("css/pics/adult-book-business-297755.jpg");
+    background-image: url("css/pics/mapLaptop.jpg");
     background-size: cover;
+    position: relative;
+    text-decoration: none;
 }
 
-.contactBox:hover {
+.contactBox a{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    opacity: 0;
     color: #FFFFFF;
-    background-color: rgba(209,207,214,0.51);
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.contactBox:hover a{
+    transition-duration: 0.3s;
+    opacity: 1;
+    background-color: rgba(67,66,72,0.46);
+}
+
+footer {
+    height: 400px;
+    padding-top: 40px;
+}
+
+.footerBox1 {
+    height: 50%;
+    background-image: url("css/pics/sandRoad.jpg");
+    background-size: cover;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "roboto light";
+}
+
+.footerBox2 {
+    height: 50%;
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.footerBox2 h4 {
+    font-family: tahu;
+    font-size: 24px;
+}
+
+.footerBox2 h5 {
+    font-family: "roboto thin";
 }
