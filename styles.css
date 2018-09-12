@@ -173,7 +173,7 @@ nav li:hover {
     position: relative;
 }
 
-.aboutMeBox a{
+.aboutMeBox a {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -219,7 +219,7 @@ nav li:hover {
     padding-top: 18px;
 }
 
-.portfolioBox a{
+.portfolioBox a {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -253,7 +253,7 @@ nav li:hover {
     text-decoration: none;
 }
 
-.contactBox a{
+.contactBox a {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -266,7 +266,7 @@ nav li:hover {
     padding-top: 40px;
 }
 
-.contactBox:hover a{
+.contactBox:hover a {
     transition-duration: 0.3s;
     opacity: 1;
     background-color: rgba(67,66,72,0.46);
