@@ -4,11 +4,36 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "roboto", sans-serif;
+}
+
+@font-face {
+    font-family: "tahu";
+    src: url("css/fonts/tahu!.ttf");
+}
+
+@font-face {
+    font-family: "caviar dreams";
+    src: url("css/fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "roboto thin";
+    src: url("css/fonts/roboto-thin.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("css/fonts/roboto-regular.ttf");
+}
+
+@font-face {
+    font-family: "vogue";
+    src: url("css/fonts/vogue.ttf");
 }
 
 nav {
-    height: 50px;
+    height: 65px;
     text-transform: capitalize;
     letter-spacing: 0;
     font-size: 16px;
@@ -32,14 +57,22 @@ nav ul {
 nav li {
     display: inline-block;
     float: right;
-    padding-right: 10px;
-    padding-left: 0px;
+    padding: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: #FFFFFF 2px solid;
+}
+
+nav li:hover {
+    border: #000000 2px solid;
 }
 
 .logoName {
     float: left;
     padding: 10px;
     display: inline-block;
+    font-family: "tahu";
+    font-size: 38px;
 }
 
 .navAlignBox {
@@ -49,17 +82,59 @@ nav li {
 }
 
 .titleContainer {
-    background-color: #dad8df;
     height: 600px;
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
+    background-image: url("css/pics/background-boardwalk-clouds-808465.jpg");
+    background-size: cover;
 }
 
 .titleBox {
-    background-color: #bebcc3;
+    color: #000000;
+    background-color: rgba(209,207,214,0.42);
     margin: 0 auto;
     width: 500px;
     text-align: center;
+    border-top: #000000 2px solid;
+    border-bottom: #000000 2px solid;
+}
+
+.titleBox img {
+    margin-top: 10px;
+    width: 6%;
+    height: auto;
+}
+
+.titleBox h1 {
+    font-size: 74px;
+    margin: 0 auto;
+    font-family: tahu;
+}
+
+.titleBox h2 {
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: "caviar dreams";
+}
+
+@media screen and (max-width: 720px) {
+    .titleBox img {
+        width: 7%;
+    }
+
+    .titleBox h1 {
+        font-size: 42px;
+    }
+
+    .titleBox h2 {
+        font-size: 18px;
+    }
+    .titleBox {
+        width: 250px;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+    }
 }
 
 .subcategoryContainer {
@@ -69,21 +144,72 @@ nav li {
 }
 
 .aboutMeBox {
-    background-color: #dad8df;
-    width: 500px;
+    border-radius: 8px;
+    /*background-color: #dad8df;*/
+    width: 600px;
     display: inline-block;
+    text-indent: 15px;
+    color: rgba(97,97,97,0);
+    padding: 10px;
+    margin: 8px;
+    font-family: "roboto thin";
+    background-image: url("css/pics/abstract-antique-architectural-design-340981.jpg");
+    background-size: cover;
+}
+
+.aboutMeBox h3.titleMaintainControl {
+    color: #FFFFFF;
+}
+
+.portfolioBox h3.titleMaintainControl {
+    color: #FFFFFF;
+}
+
+.contactBox h3.titleMaintainControl {
+    color: #FFFFFF;
+}
+
+.aboutMeBox:hover {
+    color: #FFFFFF;
+    /*background-color: rgba(186,184,191,0.46);*/
 }
 
 .portfolioContactContainer {
-    background-color: #dad8df;
-    width: 500px;
+    /*background-color: #dad8df;*/
+    color: #FFFFFF;
+    width: 600px;
     display: inline-block;
+    margin: 8px;
 }
 
 .portfolioBox {
-    background-color: #bebcc3;
+    border-radius: 8px;
+    /*background-color: #bebcc3;*/
+    text-indent: 15px;
+    color: rgba(97,97,97,0);
+    padding: 3px;
+    margin-bottom: 10px;
+    font-family: "roboto thin";
+    background-image: url("css/pics/black-watch-blogger-blue-cloth-179912.jpg");
+    background-size: cover;
+}
+
+.portfolioBox:hover {
+    color: #FFFFFF;
 }
 
 .contactBox {
-    background-color: #bebcc3;
+    border-radius: 8px;
+    /*background-color: #bebcc3;*/
+    text-indent: 15px;
+    padding: 3px;
+    color: rgba(97,97,97,0);
+    font-family: "roboto thin";
+    background-image: url("css/pics/adult-book-business-297755.jpg");
+    background-size: cover;
+}
+
+.contactBox:hover {
+    color: #FFFFFF;
+    background-color: rgba(209,207,214,0.51);
 }
