@@ -161,7 +161,7 @@ nav li:hover {
 .aboutMeBox {
     border-radius: 8px;
     width: 600px;
-    height: 300px;
+    height: 310px;
     display: inline-block;
     text-indent: 15px;
     color: #FFFFFF;
@@ -196,8 +196,9 @@ nav li:hover {
 .portfolioContactContainer {
     color: #FFFFFF;
     width: 600px;
-    display: inline-block;
     margin: 8px;
+    display: inline-block;
+    /*margin-top: 8px;*/
 }
 
 .portfolioBox {
@@ -217,6 +218,7 @@ nav li:hover {
 
 .portfolioContactContainer h3 {
     padding-top: 18px;
+    margin: 0;
 }
 
 .portfolioBox a {
