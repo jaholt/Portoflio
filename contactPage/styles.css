@@ -9,37 +9,37 @@ body {
 
 @font-face {
     font-family: "tahu";
-    src: url("css/fonts/tahu!.ttf");
+    src: url("../css/fonts/tahu!.ttf");
 }
 
 @font-face {
     font-family: "caviar dreams";
-    src: url("css/fonts/CaviarDreams.ttf");
+    src: url("../css/fonts/CaviarDreams.ttf");
 }
 
 @font-face {
     font-family: "roboto thin";
-    src: url("css/fonts/roboto-thin.ttf");
+    src: url("../css/fonts/roboto-thin.ttf");
 }
 
 @font-face {
     font-family: "roboto";
-    src: url("css/fonts/roboto-regular.ttf");
+    src: url("../css/fonts/roboto-regular.ttf");
 }
 
 @font-face {
     font-family: "roboto bold";
-    src: url("css/fonts/roboto-bold.ttf");
+    src: url("../css/fonts/roboto-bold.ttf");
 }
 
 @font-face {
     font-family: "caviar bold";
-    src: url("css/fonts/caviardreams_bold.ttf");
+    src: url("../css/fonts/caviardreams_bold.ttf");
 }
 
 @font-face {
     font-family: "roboto light";
-    src: url("css/fonts/roboto-light.ttf");
+    src: url("../css/fonts/roboto-light.ttf");
 }
 
 nav {
@@ -97,8 +97,8 @@ nav li:hover {
 /*}*/
 
 .titleContainer {
-    height: 500px;
-    background-image: url("css/pics/aerialHarbour.jpg");
+    height: 300px;
+    background-image: url("../CSS/pics/aerialRoad.jpg");
     background-size: cover;
     padding-top: 50px;
     padding-left: 100px;
@@ -143,64 +143,6 @@ nav li:hover {
     }
 }
 
-.aboutMeBox {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 8px;
-    width: 800px;
-    height: 200px;
-    color: #000000;
-    padding: 20px;
-    font-family: "roboto thin";
-}
-
-.aboutMeBoxSmall {
-    display: none;
-}
-
-@media screen and (max-width: 950px) {
-    .aboutMeBox {
-        width: 650px;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .aboutMeBox {
-        width: 550px;
-        height: 340px;
-    }
-
-    .titleContainer {
-        height: 650px;
-    }
-}
-
-@media screen and (max-width: 675px) {
-    .aboutMeBox {
-        display: none;
-    }
-
-    .aboutMeBoxSmall {
-        display: block;
-        background-color: rgba(255,255,255,0.8);
-        border-radius: 8px;
-        width: 800px;
-        height: 300px;
-        color: #000000;
-        padding: 20px;
-        font-family: "roboto thin";
-        margin: 5px 10px;
-    }
-
-    .titleBox {
-        margin: 0 auto;
-    }
-
-    .titleContainer {
-        padding: 50px 0;
-        height: 300px;
-    }
-}
-
 .subcategoryContainer {
     display: flex;
     justify-content: space-around;
@@ -209,71 +151,25 @@ nav li:hover {
     padding: 60px 0;
 }
 
-.technologiesBox {
+.contactDetailsBox {
     background-color: #FFFFFF;
     border-radius: 8px;
     width: 600px;
     height: 310px;
-    display: inline-block;
-    padding: 20px;
     color: #000000;
     margin: 8px;
     font-family: "roboto thin";
-    position: relative;
-}
-
-.technologiesBox img {
-    height: 65px;
-    width: 65px;
-}
-
-.technologiesBox img.htmlCssImg {
-    width: 100px;
-}
-
-.otherPrevExpContainer {
-    color: #FFFFFF;
-    width: 600px;
-    margin: 8px;
-    display: inline-block;
-}
-
-.prevExpBox {
-    border-radius: 8px;
-    width: 600px;
-    height: 150px;
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    font-family: "roboto thin";
-    background-image: url("css/pics/coffee.jpg");
-    background-size: cover;
-    position: relative;
-    text-decoration: none;
-}
-
-.otherPrevExpContainer h3 {
-    padding-top: 18px;
-    margin: 0;
-}
-
-.backgroundFade {
-    background-color: rgba(130,130,130,0.6);
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
     padding: 0 20px;
 }
 
-.otherExpBox {
-    border-radius: 8px;
-    width: 600px;
-    height: 150px;
-    color: #FFFFFF;
-    font-family: "roboto thin";
-    background-image: url("css/pics/flatFurniture.jpg");
-    background-size: cover;
-    position: relative;
-    text-decoration: none;
+.telephoneText {
+    display: inline;
+}
+
+.contactDetailsBox h6 {
+    display: inline;
+    color: #000000;
+    background-color: #000000;
 }
 
 footer {
