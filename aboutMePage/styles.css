@@ -222,18 +222,26 @@ nav li:hover {
     position: relative;
 }
 
-.portfolioContactContainer {
+.technologiesBox img {
+    height: 65px;
+    width: 65px;
+}
+
+.technologiesBox img.htmlCssImg {
+    width: 100px;
+}
+
+.otherPrevExpContainer {
     color: #FFFFFF;
     width: 600px;
     margin: 8px;
     display: inline-block;
 }
 
-.portfolioBox {
+.prevExpBox {
     border-radius: 8px;
     width: 600px;
     height: 150px;
-    text-indent: 15px;
     color: #FFFFFF;
     margin-bottom: 10px;
     font-family: "roboto thin";
@@ -243,7 +251,7 @@ nav li:hover {
     text-decoration: none;
 }
 
-.portfolioContactContainer h3 {
+.otherPrevExpContainer h3 {
     padding-top: 18px;
     margin: 0;
 }
@@ -253,13 +261,13 @@ nav li:hover {
     height: 100%;
     width: 100%;
     border-radius: 8px;
+    padding: 0 20px;
 }
 
-.contactBox {
+.otherExpBox {
     border-radius: 8px;
     width: 600px;
     height: 150px;
-    text-indent: 15px;
     color: #FFFFFF;
     font-family: "roboto thin";
     background-image: url("css/pics/flatFurniture.jpg");
