@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+@font-face {
+    font-family: "tahu";
+    src: url("../css/fonts/tahu!.ttf");
+}
+
+@font-face {
+    font-family: "caviar dreams";
+    src: url("../css/fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "roboto thin";
+    src: url("../css/fonts/roboto-thin.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../css/fonts/roboto-regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto bold";
+    src: url("../css/fonts/roboto-bold.ttf");
+}
+
+@font-face {
+    font-family: "caviar bold";
+    src: url("../css/fonts/caviardreams_bold.ttf");
+}
+
+@font-face {
+    font-family: "roboto light";
+    src: url("../css/fonts/roboto-light.ttf");
+}
+
+nav {
+    height: 65px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-size: 16px;
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li {
+    color: #000000;
+    display: inline-block;
+    float: right;
+    padding: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: #FFFFFF 2px solid;
+}
+
+nav li:hover {
+    border: #000000 2px solid;
+}
+
+.logoName {
+    float: left;
+    padding: 10px;
+    display: inline-block;
+    font-family: "tahu";
+    font-size: 38px;
+}
+
+.navAlignBox {
+    /*border: #FFFFFF 2px solid;*/
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+}
+
+/*@media screen and (max-width: 720px) {*/
+    /*nav ul {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+.titleContainer {
+    height: 300px;
+    background-image: url("../CSS/pics/wallArt.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.titleBox {
+    color: #000000;
+    background-color: rgba(209,207,214,0.42);
+    /*margin: 0 auto;*/
+    width: 500px;
+    text-align: center;
+    border-top: #000000 2px solid;
+    border-bottom: #000000 2px solid;
+    margin-bottom: 20px;
+}
+
+.titleBox img {
+    margin-top: 10px;
+    width: 6%;
+    height: auto;
+}
+
+.titleBox h1 {
+    font-size: 74px;
+    margin: 0 auto;
+    font-family: tahu;
+}
+
+@media screen and (max-width: 720px) {
+    .titleBox img {
+        width: 7%;
+    }
+
+    .titleBox h1 {
+        font-size: 42px;
+    }
+
+    .titleBox {
+        width: 250px;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+    }
+}
+
+.subcategoryContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+    padding: 60px 0;
+}
+
+.pilotShopBox {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 600px;
+    height: 310px;
+    color: #000000;
+    margin: 8px;
+    font-family: "roboto thin";
+    padding: 0 20px;
+}
+
+.pilotShopBox a {
+    color: #FFFFFF;
+    background-color: #AAAAAA;
+    text-decoration: none;
+}
+
+.firstProjectBox {
+    background-color: #BBBBBB;
+    border-radius: 8px;
+    width: 600px;
+    height: 310px;
+    color: #FFFFFF;
+    margin: 8px;
+    font-family: "roboto thin";
+    padding: 0 20px;
+}
+
+.firstProjectBox a {
+    color: #AAAAAA;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.secondProjectBox {
+    background-color: #AAAAAA;
+    border-radius: 8px;
+    width: 600px;
+    height: 310px;
+    color: #FFFFFF;
+    margin: 8px;
+    font-family: "roboto thin";
+    padding: 0 20px;
+}
+
+.secondProjectBox a {
+    color: #AAAAAA;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.futureProjectBox {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 600px;
+    height: 310px;
+    color: #AAAAAA;
+    margin: 8px;
+    font-family: "roboto thin";
+    padding: 0 20px;
+}
+
+footer {
+    height: 200px;
+}
+
+.footerBox2 {
+    height: 100%;
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.footerBox2 h4 {
+    font-family: tahu;
+    font-size: 24px;
+}
+
+.footerBox2 h5 {
+    font-family: "roboto thin";
+}
