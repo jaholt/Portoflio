@@ -1,18 +1,32 @@
 <?php
-$db = new PDO('MySQL: host = 127.0.0.1;dbname=portfolioProject', 'root');
-
-$aboutMeTitle = $_POST['aboutMeTitle'];
-$aboutMeText = $_POST['aboutMeTextContent'];
+require '../dbConn.php';
 
 $projectsTitle = $_POST['portfolioTitle'];
 $projectsText = $_POST['projectText'];
 $projectsUrl = $_POST['projectUrl'];
 
-$aboutMeQuery = $db->prepare("INSERT INTO `aboutMe` (`title`, `fillText`) VALUES ($aboutMeTitle, $aboutMeText);");
-$aboutMeQuery->execute();
+$projectsInsertQuery = $db->prepare("INSERT INTO `projects` (`title`, `fillText`, `url`) VALUES ($projectsTitle, $projectsText, $projectsUrl)");
+$projectsInsertQuery->execute();
 
-$projectsQuery = $db->prepare("INSERT INTO `projects` (`title`, `fillText`, `url`) VALUES ($projectsTitle, $projectsText, $projectsUrl)");
-$projectsQuery->execute();
+//comments here
+function retrieveProjectsData($db) {
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $projectsEditQuery = $db->prepare("SELECT * FROM `projects`;");
+    $projectsEditQuery->execute();
+    $projectsResult = $projectsEditQuery->fetchAll();
+    return $projectsResult;
+}
+$projectsArray = retrieveProjectsData($db);
+
+//comments here
+function retrieveAboutMeData($db) {
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $aboutMeEditQuery = $db->prepare("SELECT * FROM `aboutMe`;");
+    $aboutMeEditQuery->execute();
+    $aboutMeResults = $aboutMeEditQuery->fetchAll();
+    return $aboutMeResults;
+}
+$aboutMeArray = retrieveAboutMeData($db);
 
 
 ?>
