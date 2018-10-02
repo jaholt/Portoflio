@@ -12,7 +12,8 @@ $projectsInsertQuery->bindParam(':projectsUrl',$projectsUrl);
 $projectsInsertQuery->execute();
 
 /*
- * Function that is designed to take in the db, select the projects table and fetch all its data. Being used to retrieve the data displayed on the admin page.
+ * Function that is designed to take in the db, select the projects table and fetch all its data.
+ * Being used to retrieve the data displayed on the admin page.
  *
  * @param - called $db, designed to take the pre-existing $db variable
  *
@@ -32,7 +33,6 @@ $projectsDeleteQuery = $db->prepare("DELETE FROM `projects` WHERE `projects`.`id
 $projectsDeleteQuery->bindParam(':deleteId',$projectsDeleteId);
 $projectsDeleteQuery->execute();
 
-////comments here
 //function retrieveAboutMeData($db) {
 //    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 //    $aboutMeEditQuery = $db->prepare("SELECT * FROM `aboutMe`;");
