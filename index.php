@@ -17,10 +17,10 @@
             JaHolt
         </div>
         <ul>
-            <a href="contactPage/contactPage.html"><li>CONTACT</li></a>
-            <a href="portfolioPage/portfolioPage.html"><li>PORTFOLIO</li></a>
-            <a href="aboutMePage/aboutMePage.html"><li>ABOUT</li></a>
-            <a href="index.html"><li>HOME</li></a>
+            <a href="contactPage/contactPage.php"><li>CONTACT</li></a>
+            <a href="portfolioPage/portfolioPage.php"><li>PORTFOLIO</li></a>
+            <a href="aboutMePage/aboutMePage.php"><li>ABOUT</li></a>
+            <a href="index.php"><li>HOME</li></a>
         </ul>
         <div class="navAlignBox">
         </div>
