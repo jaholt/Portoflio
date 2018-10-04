@@ -2,7 +2,9 @@
 require_once '../dbConn.php';
 require_once '../functions.php';
 
-if($_POST['portfolioTitle'] && $_POST['projectText'] && $_POST['projectUrl']){
+if($_POST['portfolioTitle']
+    && $_POST['projectText']
+    && $_POST['projectUrl']){
     $projectsTitle = $_POST['portfolioTitle'];
     $projectsText = $_POST['projectText'];
     $projectsUrl = $_POST['projectUrl'];
@@ -14,7 +16,10 @@ if ($_POST['deleteProjectId']) {
     deleteProject($db, $projectsDeleteId);
 }
 
-if ($_POST['aboutMeText'] && $_POST['techText'] && $_POST['prevExpText'] && $_POST['otherExpText']) {
+if ($_POST['aboutMeText']
+    && $_POST['techText']
+    && $_POST['prevExpText']
+    && $_POST['otherExpText']) {
     $aboutMeText = $_POST['aboutMeText'];
     $techText = $_POST['techText'];
     $prevExpText = $_POST['prevExpText'];
