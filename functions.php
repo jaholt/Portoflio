@@ -124,7 +124,8 @@ function retrieveProjectData (PDO $db) : array
 function produceProject (array $projectResult) : string
 {
     $result = '';
-    if (is_array($projectResult) && array_key_exists(0, $projectResult)) {
+    if (is_array($projectResult)
+        && array_key_exists(0, $projectResult)) {
         foreach ($projectResult as $project) {
             $result .= '<div class="pilotShopBox">' .
                 '<h3>' . $project['title'] . '</h3>' .
@@ -148,7 +149,8 @@ function produceProject (array $projectResult) : string
 function printAdminProjects (array $projectsArray) : string
 {
     $projectText = '';
-    if (is_array($projectsArray) && array_key_exists(0, $projectsArray)) {
+    if (is_array($projectsArray)
+        && array_key_exists(0, $projectsArray)) {
         foreach ($projectsArray as $project) {
             $projectText .= 'ID: ' . $project["id"] . "<br>" . $project["title"] . "<br>" . $project["fillText"] . "<br>" . $project["url"] . "<br>";
         }
