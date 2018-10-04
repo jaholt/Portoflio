@@ -1,4 +1,9 @@
-<?php ?>
+<?php
+require_once '../functions.php';
+require_once '../dbConn.php';
+
+$retrievedProjects = retrieveProjectData($db);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,21 +35,8 @@
         </div>
     </section>
     <section class="subcategoryContainer">
-        <div class="pilotShopBox">
-            <h3>Pilot Shop</h3>
-            <p>Our first browser responsive project. We copied as closely as possible a template website and tried to imitate how it adapted to changing screen sizes. This was the third project that we carried out during our time here at Mayden.</p>
-            <a href="pilotShop/index.html">CLICK HERE to view</a>
-        </div>
-        <div class="firstProjectBox">
-            <h3>First Project</h3>
-            <p>This was, as you can see, our first project at Mayden. It was our first introduction to CSS combined with html.</p>
-            <a href="cssProject/index.html">CLICK HERE to view</a>
-        </div>
-        <div class="secondProjectBox">
-            <h3>Second Project</h3>
-            <p>The second project we created here at Mayden. This was called hello world and was our first real introduction to page structure and features.</p>
-            <a href="helloWorldProject/index.html">CLICK HERE to view</a>
-        </div>
+        <?php echo produceProject($retrievedProjects);
+        ?>
         <div class="futureProjectBox">
             <h3>Future projects</h3>
             <p>Future projects will be added here.</p>

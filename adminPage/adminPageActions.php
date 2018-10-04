@@ -2,34 +2,26 @@
 require_once '../dbConn.php';
 require_once '../functions.php';
 
-$projectsTitle = $_POST['portfolioTitle'];
-$projectsText = $_POST['projectText'];
-$projectsUrl = $_POST['projectUrl'];
+if($_POST['portfolioTitle'] && $_POST['projectText'] && $_POST['projectUrl']){
+    $projectsTitle = $_POST['portfolioTitle'];
+    $projectsText = $_POST['projectText'];
+    $projectsUrl = $_POST['projectUrl'];
+    insertProject($db, $projectsTitle, $projectsText, $projectsUrl);
+}
 
-$projectsDeleteId = $_POST['deleteProjectId'];
+if ($_POST['deleteProjectId']) {
+    $projectsDeleteId = $_POST['deleteProjectId'];
+    deleteProject($db, $projectsDeleteId);
+}
 
-$aboutMeText = $_POST['aboutMeText'];
-$techText = $_POST['techText'];
-$prevExpText = $_POST['prevExpText'];
-$otherExpText = $_POST['otherExpText'];
+if ($_POST['aboutMeText'] && $_POST['techText'] && $_POST['prevExpText'] && $_POST['otherExpText']) {
+    $aboutMeText = $_POST['aboutMeText'];
+    $techText = $_POST['techText'];
+    $prevExpText = $_POST['prevExpText'];
+    $otherExpText = $_POST['otherExpText'];
+    replaceAboutMe($db, $aboutMeText, $techText, $prevExpText, $otherExpText);
+}
 
-insertProject($db, $projectsTitle, $projectsText, $projectsUrl);
-
-deleteProject($db, $projectsDeleteId);
-
-replaceAboutMe($db, $aboutMeText, $techText, $prevExpText, $otherExpText);
-
-
-//function retrieveAboutMeData($db) {
-//    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-//    $aboutMeEditQuery = $db->prepare("SELECT * FROM `aboutMe`;");
-//    $aboutMeEditQuery->execute();
-//    $aboutMeResults = $aboutMeEditQuery->fetchAll();
-//    return $aboutMeResults;
-//}
-//$aboutMeArray = retrieveAboutMeData($db);
-
-
-
+$projectsArray = retrieveData($db, "`projects`", "*");
 
 ?>

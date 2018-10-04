@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+require_once '../dbConn.php';
+require_once '../functions.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,17 +34,20 @@
         </div>
         <div class="aboutMeBox">
             <h3>About Me</h3>
-            <p>Once completed I will have the fundamentals of coding, software design and agile project management. Complimented by my previous experience in other industries I will have the ability to apply these skills in real world programming situations.</p>
+            <p><?php $aboutMeText = retrieveData($db, "`aboutMe`", "`aboutMeText`");
+                echo arrayToText($aboutMeText, 'aboutMeText') ?></p>
         </div>
     </section>
     <section class="subcategoryContainer">
         <div class="aboutMeBoxSmall">
             <h3>About Me</h3>
-            <p>Once completed I will have the fundamentals of coding, software design and agile project management. Complimented by my previous experience in other industries I will have the ability to apply these skills in real world programming situations.</p>
+            <p><?php $aboutMeText = retrieveData($db, "`aboutMe`", "`aboutMeText`");
+                echo arrayToText($aboutMeText, 'aboutMeText') ?></p>
         </div>
         <div class="technologiesBox">
             <h3>Technologies</h3>
-            <p>I will be able to successfully handle and apply the following technologies:</p>
+            <p><?php $aboutMeText = retrieveData($db, "`aboutMe`", "`technologiesText`");
+                echo arrayToText($aboutMeText, 'technologiesText')?></p>
             <div>
                 <img class="htmlCssImg" src="CSS/pics/htmlCss.png" alt="HTML/CSSimage">
                 <img src="CSS/pics/nodejs.ico" alt="nodeJSLogo">
@@ -53,13 +59,15 @@
             <div class="prevExpBox">
                 <div class="backgroundFade">
                     <h3 class="titleMaintainControl">Previous Experience</h3>
-                    <p>I have experience working in other industries. I spent some time working for a Executive Recruitment firm based in Westminster that mainly operated in the charity and education sectors.</p>
+                    <p><?php $aboutMeText = retrieveData($db, "`aboutMe`", "`prevExpText`");
+                        echo arrayToText($aboutMeText, 'prevExpText')?></p>
                 </div>
             </div>
             <div class="otherExpBox">
                 <div class="backgroundFade">
                     <h3 class="titleMaintainControl">Other Experience</h3>
-                    <p>I attained a BA in History from Royal Holloway, University of London. I also have experience working in the Army Reserves where I qualified as a trooper in the Honourable Artillery Company.</p>
+                    <p><?php $aboutMeText = retrieveData($db, "`aboutMe`", "`otherExpText`");
+                        echo arrayToText($aboutMeText, 'otherExpText')?></p>
                 </div>
             </div>
         </div>
