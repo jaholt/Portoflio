@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: "arial";
+}
+
+aside {
+	background-color: black;
+	padding: 15px;
+	margin-top: 1px;
+	color: white;
+	display: block;
+}
+
+.links {
+	color: #A9A9A9;
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
+}
+
+h6 {
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
+}
+
+.navbar {
+	margin-right: 20px;
+}
+
+.search {
+	float: right;
+	overflow: auto;
+}
+
+.search input[type=text] {
+	padding: 3px;
+}
+
+.btn-search {
+	background-color: black;
+	color: #ADFF2F;
+	border-color: #ADFF2F;
+	padding: 4px;
+}
+
+section {
+	display: inline-block;
+}
+
+.primary {
+	display: block;
+	background-color: #F0F0F0;
+	padding: 50px;
+}
+
+.primary-internal {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+h1 {
+	font-size: 65px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.secondary {
+	margin-top: 30px;
+	display: block;
+}
+
+.secondary-internal {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+article {
+	display: inline-block;
+	width: 300px;
+	margin: 10px;
+}
+
+h5 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.line {
+	display: block;
+}
+
+.line-internal {
+	background-color: #F0F0F0;
+	width: 1010px;
+	height: 2px;
+	margin-top: 20px;
+	margin: 0 auto;
+}
+
+.company {
+	display: block;
+}
+
+.company-internal{
+	width: 1000px;
+	margin-top: 20px;
+	margin: 0 auto;
+}
