@@ -46,9 +46,9 @@ function arrayToText (array $array, string $key): string
  * @param - string - $text input the text displayed under the title in the project box
  * @param - string - $url this will be the url to the new project
  *
- * @return - int - the no. of rows, truthy to know if the function worked
+ * @return - mixed - type hinting on this breaks the function when submit is clicked
  */
-function insertProject (PDO $db, string $title, string $text, string $url) : int
+function insertProject (PDO $db, string $title, string $text, string $url)
 {
     $projectsInsertQuery = $db->prepare("INSERT INTO `projects` (`title`, `fillText`, `url`) VALUES (:projectsTitle, :projectsText, :projectsUrl)");
     $projectsInsertQuery->bindParam(':projectsTitle', $title);
@@ -64,9 +64,9 @@ function insertProject (PDO $db, string $title, string $text, string $url) : int
  * @param - PDO - $db the $db variable should be used here
  * @param - int - $projectId a number that corresponds to the id of the row which the project is stored on, can be worked out by the data displayed at the top of the page
  *
- * @return - int - the no. of rows effected, truthy to know if the function worked
+ * @return - mixed - type hinting on this breaks the function when submit is clicked
  */
-function deleteProject(PDO $db, int $projectId) : int
+function deleteProject(PDO $db, int $projectId)
 {
     $projectsDeleteQuery = $db->prepare("DELETE FROM `projects` WHERE `id` = :deleteId;");
     $projectsDeleteQuery->bindParam(':deleteId', $projectId);
@@ -83,9 +83,9 @@ function deleteProject(PDO $db, int $projectId) : int
  * @param - string - $prevExpText the text you want displayed in the previous experience box
  * @param - string - $otherExpText text displayed in the other experience box
  *
- * @result - int - number of rows effected, will always be 1 so essentially truthy
+ * @result - mixed - type hinting on this breaks the function when submit is clicked
  */
-function replaceAboutMe(PDO $db, string $aboutMeText, string $techText, string $prevExpText, string $otherExpText) : int
+function replaceAboutMe(PDO $db, string $aboutMeText, string $techText, string $prevExpText, string $otherExpText)
 {
     $aboutMeQuery = $db->prepare("UPDATE `aboutMe` SET `aboutMeText` = :aboutMeText, `technologiesText` = :techText, `prevExpText` = :prevExpText, `otherExpText` = :otherExpText ;");
     $aboutMeQuery->bindParam(':aboutMeText', $aboutMeText);
